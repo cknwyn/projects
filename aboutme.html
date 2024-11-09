@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap and personal stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <!-- Lenis -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.16/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head> 
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <div id="content">
+  <nav class="navbar fixed-top" id="navbar" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/cklogobig.gif" alt="logo" style="border-radius: 50%" width="50px" height="50px">
+      </a>
+      <p class="ms-auto pe-3 pt-3 text-white" id="menuText"> navigation </p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Explore</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                </svg>
+                 Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+                About Me
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="extra.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                </svg>
+                Other Details
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="video-section">
+    <div id="video">
+      <!-- Embed YouTube Video as Background -->
+      <iframe
+        playlist=""
+        class="position-absolute top-0 start-0 w-100 h-100"
+        src="https://www.youtube.com/embed/pcC-w-0Znsg?si=ZD5guiRk0skce1LS&amp;controls=0&autoplay=1&loop=1"
+        frameborder="0"
+        allow="autoplay; loop; fullscreen"
+        allowfullscreen
+        autoplay
+        loop
+        style="z-index: -1;">
+      </iframe>
+    </div>
+    </section>
+
+  <section class="img-grid bg-dark bg-opacity-75">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="container">
+      <div class="row">
+        <div class="text-white text-center">
+          <h1 class="d-flex justify-content-center align-items-center min-vw-100 hidden">
+            <span class="mx-2"><font color="yellow">You must do</font></span>
+            <span class="mx-2">the</span>
+            <span class="mx-2"><font color="yellow">things</font></span>
+            <span class="mx-2">you think</span>
+            <span class="mx-2"><font color="yellow">you cannot</font></span>
+            <span class="mx-2">do.</span>
+          </h1>
+    </div>
+        <br>
+        <h1 class="d-flex justify-content-center align-content-center text-white min-vw-100 ">
+          - Eleanor Roosevelt
+        </h1>
+      </div> 
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="position-absolute container d-flex justify-content-center align-content-center min-vw-100" style="top: 125%;"> 
+    <div class="row">
+      <div class="col"><h1 class="m-5 text-center hidden">
+        There are <font class="text-success">many things</font> that interests me and I put my time into. <br> One day to the next, I'll be checking <font class="text-success">new skills, new games, new media, 
+        and new technologies,</font> <br> keeping my mind open to <font class="text-success">anything</font> that would get my attention.
+      </h1></div>
+    </div>
+  </div>
+
+  <section class="img-grid">
+    <div class="img fade-image"></div>
+    <div class="img fade-image"></div>
+    <div class="img fade-image"></div>
+    <div class="img fade-image"></div>
+    <div class="img fade-image"></div>
+    <div class="img fade-image"></div>
+    <div class="img fade-image"></div>
+    <div class="img fade-image"></div>
+    <div class="img fade-image"></div>
+  </section>
+
+  <div class="container d-flex justify-content-center align-content-center bg-dark min-vw-100">
+    <div class="row">
+      <div class="col"><h1 class="text-white text-center mt-5 hidden">Profile</h1></div>
+    </div>
+  </div>
+
+  <section class="section-padding bg-dark min-vh-100">
+    <div class="container min-vh-100 p-5 d-flex">
+        <div class="row flex-nowrap w-100">
+            <!-- Left Column (Fixed) -->
+            <div class="col-lg-4 col-12 text-white" style="top: 80px;">
+                <center><img src="images/personal_photo.png" alt="self-image" width="200px" height="200px" style="border-radius: 50%;"></center>
+                <br>
+                <h5>Name: Christoffer Kent R. Pamandanan</h5>
+                <br>
+                <h4>Hey, I'm Toff!</h4>
+                <p>I am an 18 year old, who is interested in a lot of things tech. Learning about different hardware, 
+                    operating systems, and utilizing multiple different IDEs to make what I can.
+                    <br><br>
+                    Currently, I am taking the course Computer Science.
+                </p>
+                <div class="col"> 
+                  <a href="contact.html"><button type="button" class="btn btn-primary button-animation mt-3" style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 1rem; border-radius: 50px;">
+                      Contacts
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>
+                    </button></a>
+                </div>
+            </div>
+    
+            <!-- Right Column (Scrollable) -->
+            <div class="col-lg-8 col-12 text-white overflow-auto" style="max-height: calc(100vh - 60px);" data-lenis-prevent>
+                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3" data-bs-theme="dark" style="position: sticky; top: 0; z-index: 1000;">
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">Hobbies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Interest</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading3">Technologies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading4">Learning</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading5">Education</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" data-bs-theme="dark" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" style="max-height: calc(100vh - 140px); overflow-y: auto;">
+                    <hr>
+                    <h4 class="hidden" id="scrollspyHeading1">Hobbies</h4>
+                    <ul>
+                        <li> Online gaming </li>
+                        <li> Drawing </li>
+                        <li> Learning new skills. </li>
+                        <li> Programming </li>
+                        <li> Checking out anything tech. </li>
+                        <li> Robotics </li>
+                    </ul>
+                    <hr>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <h4 class="hidden" id="scrollspyHeading2">Interests</h4>
+                        <p>
+                            I love tinkering with tech, 
+                            learning how to overclock or undervolt
+                            and in general optimize a device so that
+                            it can perform at its maximum capabilities.
+
+                            Additionally, learning Linux systems
+                        </p>
+                        
+                        <p>
+                            Game development has always been a side interest that I am interested in, i've watched
+                            many video documentations of people developing their own game and see.
+                        </p>
+
+                        <p>
+                            Artificial intelligence and Machine Learning also peaks my curiosity, the logic behind
+                            them, and the multitude of applications they can give us also makes me want to learn how
+                            they are made.
+                        </p>
+
+                        <p>
+                            The art of music also helps me relax, I tend to listen towards certain artists like Shaun, Ben & Ben, Cup of Joe, and other similar artists.
+                       </p>
+                       <p>
+
+                       </p>
+                    <hr>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <h4 class="hidden" id="scrollspyHeading3">Technologies | Languages</h4>
+                    <div class="container d-flex flex-row align-items-center justify-content-center">
+                      <div class="row">
+                        <div class="col">
+                          <svg class="button-animation" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <path fill="#F44336" d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z"></path><path fill="#F44336" d="M23.878,17.27c-0.192,2.516,2.229,3.857,2.299,5.695c0.056,1.496-1.447,2.743-1.447,2.743s2.728-0.536,3.579-2.818c0.945-2.534-1.834-4.269-1.548-6.298c0.267-1.938,6.031-5.543,6.031-5.543S24.311,11.611,23.878,17.27z"></path><g><path fill="#1565C0" d="M32.084 25.055c1.754-.394 3.233.723 3.233 2.01 0 2.901-4.021 5.643-4.021 5.643s6.225-.742 6.225-5.505C37.521 24.053 34.464 23.266 32.084 25.055zM29.129 27.395c0 0 1.941-1.383 2.458-1.902-4.763 1.011-15.638 1.147-15.638.269 0-.809 3.507-1.638 3.507-1.638s-7.773-.112-7.773 2.181C11.683 28.695 21.858 28.866 29.129 27.395z"></path><path fill="#1565C0" d="M27.935,29.571c-4.509,1.499-12.814,1.02-10.354-0.993c-1.198,0-2.974,0.963-2.974,1.889c0,1.857,8.982,3.291,15.63,0.572L27.935,29.571z"></path><path fill="#1565C0" d="M18.686,32.739c-1.636,0-2.695,1.054-2.695,1.822c0,2.391,9.76,2.632,13.627,0.205l-2.458-1.632C24.271,34.404,17.014,34.579,18.686,32.739z"></path><path fill="#1565C0" d="M36.281,36.632c0-0.936-1.055-1.377-1.433-1.588c2.228,5.373-22.317,4.956-22.317,1.784c0-0.721,1.807-1.427,3.477-1.093l-1.42-0.839C11.26,34.374,9,35.837,9,37.017C9,42.52,36.281,42.255,36.281,36.632z"></path><path fill="#1565C0" d="M39,38.604c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z"></path></g>
+                          </svg>
+                        </div>
+                        <div class="col">  
+                          <svg class="button-animation" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
+                          </svg>
+                        </div>
+                        <div class="col">  
+                          <svg class="button-animation" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
+                          </svg>
+                        </div>
+                        <div class="col">  
+                          <svg class="button-animation" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <linearGradient id="Q_pn21O5LDDqwJlze0Upoa_g9mmSxx3SwAI_gr1" x1="24" x2="24" y1="41" y2="7" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#643499"></stop><stop offset=".011" stop-color="#68369f"></stop><stop offset=".135" stop-color="#773db6"></stop><stop offset=".193" stop-color="#8042c3"></stop><stop offset=".248" stop-color="#8343c8"></stop><stop offset=".388" stop-color="#8444c9"></stop><stop offset=".732" stop-color="#9751d2"></stop><stop offset=".997" stop-color="#9c55d4"></stop><stop offset=".998" stop-color="#9c55d4"></stop><stop offset="1" stop-color="#9c55d4"></stop></linearGradient><path fill="url(#Q_pn21O5LDDqwJlze0Upoa_g9mmSxx3SwAI_gr1)" d="M7.373,11.443C7.293,9.132,9.094,7,11.529,7h24.946c2.435,0,4.236,2.132,4.155,4.443	c-0.077,2.221,0.023,5.097,0.747,7.443c0.681,2.207,1.801,3.652,3.593,3.981c0.206,0.038,0.363,0.205,0.363,0.415v1.438	c0,0.21-0.157,0.377-0.363,0.415c-1.792,0.328-2.912,1.773-3.593,3.981c-0.724,2.345-0.824,5.222-0.747,7.443	C40.71,38.868,38.909,41,36.475,41H11.529c-2.434,0-4.236-2.132-4.155-4.443c0.077-2.221-0.023-5.097-0.747-7.443	c-0.681-2.207-1.804-3.652-3.596-3.981c-0.206-0.038-0.363-0.205-0.363-0.415v-1.438c0-0.21,0.157-0.377,0.363-0.415	c1.792-0.328,2.915-1.773,3.596-3.981C7.35,16.54,7.451,13.664,7.373,11.443z"></path><path fill="#fff" d="M27.073,23.464v-0.028c1.853-0.32,3.299-2.057,3.299-3.97c0-1.352-0.52-2.498-1.504-3.312	c-0.981-0.812-2.357-1.241-3.981-1.241H17.45V33.08h7.475c1.942,0,3.555-0.474,4.663-1.372c1.109-0.899,1.696-2.207,1.696-3.783	C31.283,25.544,29.593,23.756,27.073,23.464z M23.59,22.608h-3.181V17.29h3.784c2.076,0,3.219,0.911,3.219,2.565	C27.413,21.63,26.055,22.608,23.59,22.608z M20.409,24.834h3.759c2.716,0,4.092,0.981,4.092,2.916c0,1.932-1.357,2.953-3.925,2.953	h-3.926V24.834z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                        <ul class="">
+                            <li> 
+                              Java 
+                            </li>
+                            <li> 
+                              CSS 
+                            </li>
+                            <li>
+                              HTML 
+                            </li>
+                            <li> 
+                              Bootstrap 
+                            </li>
+                        </ul>
+                        <div class="col">
+                            <p> 
+                              There are definitely some that I have a basis of knowledge so I can be able to use them, although not perfectly. <br><br>
+                              in the future, I will learn many more languages and make my knowledge and skillset much more capable than what I have now. <br>
+                            </p>
+                        </div>
+                    <hr>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <h4 class="hidden" id="scrollspyHeading4">Learning</h4>
+                        <p> 
+                        Currently, I am learning advanced Java, Python, Bootstrap,
+                        and looking into other frameworks that I can utilize. 
+                        </p>
+                        <p> 
+                        In the future, I would like to check out game development IDEs and
+                        learn more about 3D modeling.
+                        </p>
+                        <p> 
+                          Art & Design is something that I've always had interest in, learning more
+                          image-manipulation applications, digital drawing, art tips and techniques are
+                          some things that I want to develop.
+                        </p>
+                    <hr>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <h4 class="hidden" id="scrollspyHeading5">Education</h4>
+                    <p> 
+                        I graduated grade school and senior high school in Angeles University Foundation - Integrated School
+                    </p>
+                    <p> 
+                        Currently, I am taking a Bachelor of Science in Computer Science
+                        and expect to graduate in the year 2028.
+                    </p>
+                    <hr>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-6 mb-0 text-body-secondary">ITC - Finals Activity</p>
+  
+      <ul class="nav col-md-6 justify-content-end">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+            </svg>
+            Download
+          </a>
+        </li>
+        <br>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+            </svg>
+            Back to Top
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+    </div>
+</body>
+
+</html>

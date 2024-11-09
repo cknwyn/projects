@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Kanit", serif;
+}
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.highlight-text {
+  color: red;
+}
+
+.section-padding {
+  padding: 15px;
+}
+
+.button-animation:hover {
+  animation: raise 0.5s forwards; 
+}
+
+.logo-animation:hover {
+  animation: spin 0.5s ease-in-out forwards;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+.loader {
+    border: 8px solid #f3f3f3; /* Light border */
+    border-top: 8px solid #3498db; /* Blue color for animation */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+  }
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.fade-image {
+  opacity: 1;
+  will-change: opacity, transform;
+  transition: opacity -5.6s ease 0.3s, transform -5.6s ease 0.3s;
+}
+
+.gallery {
+  height: 200vh;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+
+  &:nth-of-type(1) { background-image: url(https://vivavicor.com/wp-content/uploads/2019/12/356794519_662839228995203_7338432297203320900_n.jpg); }
+  &:nth-of-type(2) { background-image: url(https://cdn.tatlerasia.com/tatlerasia/i/2022/08/03132356-benben-photo-08-photo-karen-dela-fuente_cover_1500x999.jpg); }
+  &:nth-of-type(3) { background-image: url(https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S2_1200x1600-7bf61b8b77e394c4bc709f6b02c0db24); }
+  &:nth-of-type(4) { background-image: url(https://images.indianexpress.com/2023/12/Steam-Valve.jpg); }
+  &:nth-of-type(5) { background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYQtjY6ysIgNozzpQQ9Y2XguwJdIIsSqhZw&s); }
+  &:nth-of-type(6) { background-image: url(https://www.riotgames.com/darkroom/1440/a4e88f6b04bf83f1c417e87292b85606:b62ff9b783f3dd26a6321e1440efe13b/riot-games-the-team-behind-worlds-2022-esports-broadcast-league-of-legends.png); }
+  &:nth-of-type(7) { background-image: url(https://wallpapercave.com/wp/wp13617700.png); }
+  &:nth-of-type(8) { background-image: url(https://www.riotgames.com/darkroom/1440/079912352d14904fc4ab9030d42fdcab:532f9940a41045428ef02e1312fd4844/53098657981-5372ccd676-o.png); }
+  &:nth-of-type(9) { background-image: url(https://i.redd.it/pkh6u5ecmidd1.jpeg) }
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 4;
+    top: 0;
+    left: 0;
+  }
+}
+
+.gallery-container {
+  padding: 0;
+  margin: 0;
+  overflow: hidden; /* Ensures no extra space */
+}
+
+.social-logos {
+    padding-left: 5%;
+}
+
+.social-logos:hover {
+  animation: spin 0.5s ease-in-out forwards;
+}
+
+.arrow-animation {
+    animation: upanddown 2s ease-in-out infinite;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hero-text:first-child {
+  animation-delay: 200ms;
+  animation: changecolor 3s ease-in-out infinite;
+}
+
+.hero-text:nth-child(2) {
+  animation-delay: 600ms;
+  animation: changecolor3 4s ease-in-out infinite;
+}
+
+.hero-text:last-child {
+  animation-delay: 1000ms;
+  animation: changecolor2 5s ease-in-out infinite;
+}
+
+.form-design {
+  width: 100%;
+  padding: 2% 3%;
+  background: url(https://www.baltana.com/files/wallpapers-8/Color-Form-Background-Wallpaper-24735.jpg);
+  border-radius: 5%;
+}
+
+textarea.form-control {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.section-background {
+  background: url(https://64.media.tumblr.com/835c70d0be1fde25658d1c5dc87f3e69/f082a74ef2dc77b8-0c/s1280x1920/704c6ff7e1960200d5e09b6a3b9a3cf2653cfd79.gifv);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-a {
+  position:absolute;
+  top: 125%;
+  left:60%;
+}
+
+.col-lg-8::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+.col-lg-8::-webkit-scrollbar-track {
+    background-color: #333; /* Color of the track (the area behind the scrollbar) */
+  }
+  
+.col-lg-8::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners of the scrollbar thumb */
+  }
+  
+.col-lg-8::-webkit-scrollbar-thumb:hover {
+    background-color: #777; /* Color of the scrollbar thumb on hover */
+  }
+  /* Existing styles */
+.col-lg-4.col-12.text-white.position-sticky {
+    top: 80px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  /* New responsive styles */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 991.98px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.col-lg-4, .col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+  }
+  .col-lg-8 {
+      flex: 0 0 auto;
+      width: 66.66666667%;
+  }
+}
+
+.scrollspy-example {
+  max-height: calc(100vh - 200px);
+}
+
+@media (max-width: 991.98px) {
+  .scrollspy-example {
+      max-height: calc(100vh - 140px);
+  }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes raise {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes upanddown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(50px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes changecolor {
+  0% { color: red }
+  50% {color: burlywood }
+  100% { color: red }
+}
+
+@keyframes changecolor2 {
+  0% { color: yellow }
+  50% {color: green }
+  100% { color: yellow }
+}
+
+@keyframes changecolor3 {
+  0% { color: rgb(0, 132, 255) }
+  50% {color:  rgb(255, 255, 255) }
+  100% { color:  rgb(0, 132, 255) }
+}
