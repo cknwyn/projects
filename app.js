@@ -71,8 +71,8 @@ window.addEventListener('load', () => {
     })
     
     .to('.img', {
-        stagger: .15,
-        y: -900,
+        stagger: .3,
+        y: -700,
     })
 
     .to('.social-logos', {
