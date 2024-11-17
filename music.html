@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>music list</title>
+        <!-- Bootstrap and personal stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Lenis -->
+        <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.16/dist/lenis.css">
+        <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+        <!-- GSAP -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script> 
+        <!-- Personal -->
+        <script src="app.js"></script>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      </head> 
+<body>
+    <section class="min-vh-100">
+        <div class="container d-flex justify-content-center align-items-center min-vh-100 pt-5">
+            <div class="row ms-5 ">
+        <div class="card mb-3 me-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2735b656d32ea6b0b9c54c2d2e0" class="img-fluid rounded-start" alt="...">
+            </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">THE SHADE</h5>
+                        <a href="https://open.spotify.com/track/1gH1h30wkQdd9zhY3j7a8T?si=9aab45ab846446b6" target="_blank"><button class="btn btn-pill btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                            </svg> Play
+                            </button></a>
+                        <p class="card-text"><small class="text-body-secondary">Rex Orange County</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 me-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSYlqTHWDJ3YL_65Z3i5z9C32P0KRcXQtvzQ&s" class="img-fluid rounded-start" alt="...">
+            </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Patutunguhan</h5>
+                        <a href="https://open.spotify.com/track/1EP2WyCX9Q7y24bKPSZ0tc?si=38103f4165584885" target="_blank"><button class="btn btn-pill btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                            </svg> Play
+                            </button></a>
+                        <p class="card-text"><small class="text-body-secondary">Cup Of Joe</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 me-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2739f49ffe7fe94bdd0f2f98af2" class="img-fluid rounded-start" alt="...">
+            </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">100 Degrees</h5>
+                        <a href="https://open.spotify.com/track/4Pw5CxFc8imEP5Qn81HKzi?si=1703e2eb51d0496b" target="_blank"><button class="btn btn-pill btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                            </svg> Play
+                            </button></a>
+                        <p class="card-text"><small class="text-body-secondary">Rich Brian</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 me-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExIVFRUXGBgWFxUXGBgWFxcXFRUXGBcXFxYYHSggGBolHRcVITEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGxAQGi0lICUtLS0tLS8vLS0tLS0tLS0tLy8tMC8tLy0tLS0tLS0uLS0tKy0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAQIEBQYDB//EAD8QAAEDAgMEBwYEBQMFAQAAAAEAAhEDIQQSMQVBUWEGInGBkaHBEzJSsdHwFBVC4SMzYnLCFpKyU4Ki0vEH/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAECAwQFBv/EAC0RAAICAQIFAgUEAwAAAAAAAAABAhEDBCESEzFBUTJhBRQicYEjM5HRobHh/9oADAMBAAIRAxEAPwC8hLCCfvsQQu0cgAlQiEgFShBShAxWlKE0JwSAVKlpU5tIFibmNB80O+nySJAReEiAhAgQhCAAJEoQgYiEJYsgQ1BQhMBpSJyc1iLFRyISEKWaBie1R3NSUkxuNDCEhCUoUiI2EieN6aUwEhKkSoAcClAOqNTdK1IYiUHmkhXWwNk+067x1AbD4j9AoTmoK2ShFydIr6OCqPEspuI4gW8SmECwLSHTck7tIyxY2K22AxQqB2VsNa7IN0xGg3Dcso2l7XEkDR1Qnukk+Spx5nJu1VF08SilTuzi3BPNM1cvUG/jeLDeF1ds6oKQqlvV84Ohjh9VoNv/AMtlJts72sAG4fTRd9tENw7+EBo7yAFBaiTrbq/8E+RFXv0RjFMpbOqvGZrCRxsJjhJUNafY+1w4so5LxEjTqtnTdorcspRVxRVijGTqTKGrg6jfeY4cyDHio8r0AuA1MKPidn03+8wTx0PiLqiOq8oulpvDMVUpFsSIkBw5g6FT8Jsd1RjXtcLkgzYNA3zv/cLptnZXsoc0ktJi+oPbvFlXMxTw0sDiGnUcVo4nONwZRShKpIYTFrGE3f6IlIFYQFRu7/okSzaPv70QAhQgohAgaFMoUTrCjU2q2wFQAFrtI890KnNJpbF2KKb3O2Kw+ZjXt0AykcCquthzExbirShXAa4HfolrQKMalx8IWWGSUHXuaJQUtzO1GphUmsxRyF0Iu0YZISbJpKeDqmqREahPznl4D6IQArDBRCAndyBknZmCNZ4YNNXHg3etbjcWzD0xaws1o3x96qF0UoAU3P3udHc3TzJVRt7GCrUMGWt6o9T3nyAWKX6uXh7I1xfKx8XdmuqPAYXD4S7ylZbouya08GuPyHqtKWZqOUb2R4thZ7op/Nd/Yf8Ak1V4tscyzJvOJZbQObFUGcA5/wA4/wCKTpS+KIHF4HgCfRVdSoTtlrSTAw8gbp627vKb/wDotIvpUmB2Xrl3g2P8lWp7x9ico7S9ysy9XNIiY1EzE6axzV30UZL3v+FoH+4/RvmvP/ywwBm0m+8zp4eq3n/55gvZ0ahJkuqa8mtbA8yrsmduLVFOPElJOyf0rrgU2NP6nT3NF/mFHruNDD03te5rnEWJkEOBdGU2sI0VP00whxGLo0g6A0NbA41HSfLKtrV9m0tDso/SyY37mz2BVLJwxSoucOKTdmQx+3DVYGuyi82m8C2/mVXmu3iF16ZdHmvxDBRbDntktaLF0xmjQaXPKVGw/RIYd9KpiodSzQ4NJcZLSWhwG6Ru81bHOorZFMsNvdlvh9m5sO6uXQACWjiG6ye4hVJxLeK2+O2PTqYc4Vs06ZEDJEgBwdAndOvavNMZ0aDKrqQc55bvA13zG60T3ojqZbjlgiqLL8Y3ik/GN4jxVINjs+Ipztjs+J339hS58iHKiXBxzeI8VIpYhpMWOiz7djs4lXWx8ExlRruEW3WtdRlnlRKOGNl9QwTiJIA7SAu/sKYF6rB3yuuPwtHNfOJvIMi6r34XDT77/BZHlm+5pWOKJbhRt/Gam+zYT1arD2mFC9hhgfeefBOjCg2Dz3hLikPhidK2CfEgBw4i6p8TiWtMEwtDga9Np6jDy6xSbf2U2qc8CQ0ZgNeatjnmiuWGLMi7adP4gkG1afxBNxGzKfwriNn0/hC0LPMoeGJ3/M6fxBC4fgKfwhKnz5i5MS4hKNErAnMIEyJkHQxe8Hu4LWZh1PEva0sDiGnUA6rmdEic7d2epQBqdl7Zpmm0Pdlc0AGd8WkFQ8NjKLcUXtMNc0gk2GYkGRwFt6czoza9W/Jsjxlc63Rp4HVeHciMvqVjXJt1LqbHzaVroZ/pDt2mzadKtSOfIwMqRoZL5AJ1MPnhIHNd9v7WGIeC0EMaIE6ydTbuWOxrCMS+RGV9wd1wN/NajZ+zalYH2bZyxNwNZjU8lRSTJ8TaIpKn4Da9WiC2mRBvBAN9JHgE3B7JrVQSxk5SWmSG9YaiCdVxGGe92VrCXQOqBewEzGiezFujphNoFtcV3jOZk7pkR3Ru7FbYrbdOriKDiC2mwyc2uY74E2BDfNUmJwVRkZ6bmzpIIHiuCVJjto9AwVZtV9ZzHiQWsDhDuoGgmO0l4nkk240ONCmf1Vmk9jGuJHyWDpVnMMtc5p0kEgxwsnNxLwWnO6WmW3PVMzbglwkuPYvOmOJPt2tBIytmxgguJnyDVRMxDgcwcQ68uBMmeJRVqOe4udLibkm+7jwAHkuY7VJKkQbt2ACEo0KCOX3p9UxApGHqXUdydTPJJoaZqgfa0ZHvM17FQ1D1u8KZsfG5HCdDYjkVM2hsyDnZdhMgjdfeqVs6LXujOGqZXSk+Xdy7Owt9FJweBLnAASf3U21RFJlv0fw+Z2Yizb/RScS7I173auEAdq4YvEii0UmG+riPkqHGYwuNzKrS4ibdEXFOuo6c9yaVeilsEIQmIsRrbn8kAff393Ss1vz+SSF0TEEJQEbkBAzS9F6znB+ZxIGUAEkxY6TouG2do1adYhr4EAxAI05hT8BtWjkaMwaQACCIuBx0K47Wfhntc7MwvynKQ68xYQCsK/dbcTa/20lI8uxpzYt5ddznTrFzcn525r0boOzqVHcXAeAn/Jeb7TLW4kk6SD5LWbB6T0KeGrtNTLU6zmAgy4lgAynSZCryLdolDszfMpAEkCC4yeZgCe2APBZ7ozT/AI2KdvzQJ/qc8+gT9l9McLUY0vrMpvjrNf1YPImxG/VR+h+Np1auMFMyM4g8QTUuOXPsVXZlj3aOG1MZUdiKdCt7MhtRhOUG+aNZJ3HRaXaFdzGlwpte1oky7Kba2ykG3NZXb2ymYVraxrFzvaMEPIBMuAmeWvYCtRtXAOqjKKrqbbhwABzA892/xTdbCV7me6H02ONbM1pENMEAgDrcVJ2lsOjVp+1w+WdQGnqujUR+kqL0cysxuIwrSXBtMEutr1JFuGchXcUcDQc4khjZccxu50WA4kwAAEN77AltTMhsfHNovc9zM4LC3LbfEzO6J8VGxmI9pUL8rWz+ltmiBFo7FTO29DiTTaSc3VMwJGojeCfJcPzs/CPFWbWV70XTTY/e9IqentiZBAFiQbm4Ex3xC5/nLuA80WKi9du7PVAVE7az7Wb98pSfm74Nhu9UWFGjo1IVzs7azmW1bvB0WA/N6nJPbtepBuLKLSZJNo9MONoOuaZB5Fcq+2WtBbSaG89688O2KgtmB57vkmP2vUI94eXNQ4ET4maivXJ3qK8rMu2lUP6vkkdjak++T2dknUbvRWKkVvc0s+Kde3gst+OqfEU44p+QHOdSIm+gM9idio02Y8fNCy/t6nx/+SEWFG4CUIQCukYQCEIQAIQUFAFVi9htq1A4vLQSM0CTG8juVHtbZ4ouaASQZN7Gxstgs10mP8RvJvzJWbNjiouRfjm26KlzBAg3MyOH1lIGwbEjySlIVhtkuJg8An1Ul+NqubldWquAGhqOIA7CVGBRKVsOJi0nFplrnNPFpIPO4Tqr813Oc4jjf5lI+O+3ZoPPVIXJ2w4mOrtGbWfMcr70zKEEoJSthbAAIyDX1uiUSi2FsMoXR7RffcX4+9omEJSdQL3BnfafqixWxrQE4sHlN+0iB4BNXQ+6O1w8Mp9UBZzICICEIAc5oGhnmNLHnuSHUxpe+kpTE2uLfuNe0SljSeHqUAIRYdp8o+qQBKfdHafk1NQAISyhIRvXaoCHalEc12SkQhCChAgcLpXT6+QSIQMRZfpKD7UcMo+bvoVqQsv0lYfag7oAmxgyfDf2weCpz+gsw+oqirXYuFa6qWuGYZbTGtp0kb1VK32E8isZEENIiIjKWi4427bLDi9RYi4q7PpM/SOHjqFBfhKU+4FIxNQkqK2SrW9zXDEuHc6HA0z+gWj6LozZlI/oCa5pk6b9CDvhSKLirIU+qKMsWlsxG7IpfAF0GxaP/THmp1FhVjh8PFyrnGPgyKUvJT/kNKCSznvWNrsAc4D4iAOXzXpeJNiF5tiGe8be9x5u+iy50qRanZxdO+beSGtJ0E7/AAuUFKzUGJ5HRZgEa2V3dRcG3iB1otvgadwXalTyDMbn9I171wq1CRJ33njHPvSJ1S3OLQu1bCua0EiAbjmpeycJncCfdF3HkIn0VjiqPtSXOOVosBwDd1yAouVMlHHaszobJgakx3lOeCAARBuI04fVPxDQHGDIG+Nw3wueYxE2nS2tu/cFMrFd7o7SfkPRNIt5JwJLSJsIMcNRPZeO8IHuntHycgAy8vmhJl7PEISA3jR99yAEJAuyUAgo3IKAEQhBQIRZbpIQakggwADyN7FddsbbJllI20Lhqf7eA5qla3j4TA38VzdVq0/oh/J3NF8Mfry7e39gHTAH0Hiou08TiaVSmKbYJMVIkZRIsbiLSe4KSWE7iBpOk8gubrk9i56m0db5bGlUUl+NyXT2lV1zTyMH5qbh9rjR7Y5j6G6qCN41+ac2CJUo5Zx6MeTTYprdfxsa3DUg4BwIIO8KbSpwsfgsc6kQW6fqF+t28O0LYYPFNqNa9uhG/UXIPmCujh1EJL3PP6zR5ccru4vuWWGClPqqDTqp2da4/VucyX07D8RUsV57UNnaXfPPf9Vuaz7LCVNP+53osuo7F0FsMLpjlZdsJSzOA4lcCp+zSBUg21F902v2Ssj6E4q2Mxj8zoGgsOwKZh9iuLBUNmkp1PBNac1QgDgCCT2D1VjV6Q5iGMaA0RlBvBFgVW2+xcorrIuaWxabKBEkZhJcQJAG717uSyNTBuc45AS3057lp9r7bYGCmblti3iRaSeEzZZLGbRc43MDcBoB2BKCZLK49BuJ2c9oki3EEH5KI5puTqdSVOwm0S2QQHA6g6ctO9JiMcHaMa3sH1lWKylqPVEBPI6na75Af+y5pS4xE2EkDmYn5DwUisXL2eIQmoQBvgUD09UkIhdgpBBKRLlQAiz3SHakk0WH+8/4/Xw4qy21tD2VOZ6zrN9T3fRY9hmTc7yfqe9c/W5+H6I/k7PwvSKT50+i6ffz+P8AYNsmOM2Gg1PanvkA+P2U2mCB2rlnoDq+qSA06Cw1sOAvpp4JmEzZuqLkwBEzu070OBgmNPXRGUtsbEWKBewlMGSDqCdbc0MfkOaARIkESLJaUZjMmROu/wBUrhyQArvi46f/ABSMFjTRcHCS2Ic2bRO7vk9p8YbRFj9groAZtqbW3zut8k02naIyipRp9DfYeo1zQ5pkESCnFyzHRnaMH2R910lh06w95o+f/wBWjD13tPNZMaaPGa3BLBmcZb+PsdMkhYSq/wDTYAE+J3nnYeC3ZmCsG9p1hUapUkLFK0zpRol7oY3ibncCpY2ZVknKNL33793FLsP+b2MPmQVpKbJPd6LOkqNUIJozR2ZWO4eP7JaeyKwvA8f2WjdUgwBIHvR6cSpNKCJCrm0uxZy4mSxeBrAdYNuWiZMySfmXeQSu2LVnQb95+i0O2Wwwf30/+YVgGIUlXQi8asyDNi1etYC0XM6kcvNNbsOtrlb4n6Lb0aC7eyVqSfYjwIwJ2HV3x5qDUZkcWkAxE6+C9Gr01gNrCK9Qcx8gicUkKUUkRs55eAQmoVRUb1CESuwUCIQnmk6NFTkzwg6bLseCc1aRFxGDpvdmcwOIsM1wOwGya/Z9JwLTTaAbGAB5i6kApSpqMJK66i48kXVvb3MdtHYr2PyUw57XXaOEahx5Wvz8YeLwtSmcr4B1iQdVvZWW6Su/ixG4X8bfJYcukhFOR0sXxTM6jt9/JSOO53K28jl4J9CsK+IdQpHNUAzOzAMEwCY3b10IULoF1tq1ncMw9P8AFZYYU3TL38Tm1aStIm1qT6bw17HNeN28zoQd994UsbIxJE+zyj+ogHwmV6DiRTJaS1pcyS0kSWkiDBVXjnEq9aOK6sjL4tNpcMUn3/4YfEUqjLPbF+RB13jtKsMFg2gA1AHOO4+63u3m6n16E7pXJ1ApRwKMrDLrpZIcPTzQ59Si2H1AwZYgwBEaafJTdmbYoVXhjagLjo0hzZ7JAlY/blQOqZZMM1bH6iAZnfrHKOarg0l7A0kOJgEWIkxr3pfNShKopFHyiyRuTf8AR7BUbDT2Lzyr+ns9Sttisewg9dviFhi4wBNhMDhK0ah7IwRVItNgj+OP7P8A1WlYC52UG15PDkOazOwD/G7GH5hbyngqQAsAYVcfSaIXRHpYcAQAuVTDmmczbg+831HNTm4ekdAEw4elE5Qbwk4plm/gpekFQGhmBkZmH/zCt6DZhUfSCBSqNFgHtgf9zSrrDPgBSUEiF2WIAAXKo5ND09oCkI5ZF59t4EYioObf+IXo7yvOdvj+O88f3Hoo5PSRkyBnKVNQqCo3koShMebLrTlwxcvBXCPFJR8kjCs/V4Lu5NpCGgclyNW0LkRi5b9ztwxOXp6LYjwhOdqkC6q+nH9K6I4+SP6zjJ93v+Qa0nQLMdKaJbVadxb5tN/mPFbOk2APNQ9oYVtemWEcC1xtH9Q+7rDk1Dn7I1w06gvcwazexMQWV8WWuyuzQ0gwfefotK9pBIOoJB7QsjXd7HFVc9m1Ie0nQ3HqXeCobaWxDAk5Uyzx1R1V9N1QOeaZljm1chBJE5gWOkdUaEHVW+HxjngmXCDGpVFh67X3YQRvIO/mCrfAe7rvPoq4TldNmnUQioWiXm5nxP3wQ6JtMdslNldHv/pAkDjxmRPh3K22YLZRzJJ4kld9nUZJqHTRv1++a443qyIiJAFpgkkEkDrWOu+ytKDMrQOAWeCuR0tTk4YUu50gcN3Hfx+aJRPL97/fglIsDzPlH1Wg5ttlhsVw9oTecjuyOr+/kt0cTSyiajRYTcblg9hn+LpPVPhIsrstWmEbiWRlwl4cbQBkVBpEC6QbUw7b5jrAsdeSpvZiFHxuGzMtZwMtPNPlpE+Y33Db+IDqdUjQuBHi1SH41zA14JIA6zRv5qqxVQmg7M3KRHYYIuFNrvMBrWzmMcIbvvusmRNDhMUHtDm6FS2vVNggKbA0bvNSPxMXTojZPr1wAvPts1Q6q61wdeI1HqtNXxBcVk9on+K/t9FDL6RHC3NCLcT4fulWYibsnvTX6JUhXUyx4sbiu6K8UuGak/JOYbDsUauLrphH2jgueI1WDRu5fg3attQr3OaIS5bwLqVSpR2rdlzLGvcxY8TyMjOqkdV09osVxx2MyMc4SQBOU8v6p042lWLmA6hV21qIyOA3td8lxXxJ32OwuFqu5iHOJJJ1Jk9pUfF4OnVEPYHDdI07DuXcIVxyrM/SwgaMrYaJ/SIlS8O8s003jj+6YSnbt3nNvK8+Sy3vZ2Wk1T6FqyrmaCNOXbvTs1o7dw3xv7gqrD1cl9xIkf5D73q0zAgEFaIy4kcvNieN+xU7Sbc9s+StplV+0KQJIzAdUG8jfpYfcKbhjLGmf0g9tgow9TLs++ODOhJK6Os1vPN8wPRc8v36dq61hAp7uqT4vcrTIStiH+Lp+g/MXV6XKj2O2Kh/t+cFWzitmL0jZ1NS0Jjqllxc9c3uUwOe0XzTd2KbTfYHkD4gKvxf8t3YVIpv6rYP6W93VE+aXcfYntrXTata6jNPFdHNue3v8ExHYDTs9VmMf/Nf2+i1LRYeHqsttH+a/t9FRlexJrY4TzQn5x8I8/qhZys1J2zQ+PyP0Tfzyh8fkfopv4dh1YPAJn4Kn/02+AXVqfsV/QRqe3KOYQ/xBA7yp+0cYxjRUM5dJAJgnSYUWpgqO+mzwC74R7Ww0CG6Ru8FmeGcJPJGvc0LNGceXK/Yn0GQJ3ny5LolQsU5OTtmyMVFUhFW7ZdDXngx3yKs1XY5ocXNdoRB7IVcldLy0WRdW/CMGHJcy1v5NR+DzP1TfySj8Hmfqt/ysvJy+OHueeVhY96GGRKmbWw+StUZuDjHYbjyIVY09QrlSVNo7cXcUyTTc0zfstInmu2ErZbbt3I+gUaiRlC7Yds1Kbdcz2iOWYT5SnG7VEckVKLTHVaRebGZ1OgbcgCTrYA24qyo5RA3C3YNJHMK/OyKXA+KBsmlwPiV0o6KSOXk1EZ0uyKDPaJtM9671HNLGaiAWzYz1i479wcLdt1ct2RQ4O8ZXRuwqJGrvH9lL5WRVxwKIVyx0sLTLReOXDcU/wDMX36zfA3V0dgUv6vFJ/p+nxd4j6KSwZF0Y+ZAo/xz+I8EHHP4t++9Xf8Ap6n8TvEfRH+nafxP8R9EcrL5HzIFGcU4iCQAbHQmDyT241zWtgtO4iDIjnvtCuB0dp/E/wAvog9HafxO8vojlZQ5kCqZtF5t1B4xrvunP2q+TAaRPP6qyHRxnxu8vog9HWfG7y+iOVlDmQITdtPA0bPfB87KBiamZ5ef1QbdkHzBV4ejrPjd5J1To6yB13WBG7iTfxUXgyPqHMj5Kb8N/RU/2pVa/wCnW/G7ySJfLTFxQ8l4E15MGE4FIugZiESiVLcwHcm/hxzQAtDGkWN1Lbjm/cKGMOOaX8OOayT0cG7i6NcNXJKpKyTUxw3ffcFBqPLtAu4ot4LoAjHpIQkpPdiyaqclwrZHOiyBBXRCIWozGe2/sT2rs4OV2l9CBpPAhZmp0bxAtDXDXquif9wC9HhM9kOAWbJpMc3b6mnHq8mNUjzunsbEGwo5ebnNjyMrQ7K2IKbvaPIfUIiwhrJEENEC/P8AedF7FvBODAPsoxaTHjd9fuPJq8k1XT7EEoU72Q4JQ0DQLVZlohNpk7ipNGjl1XVBKLChEJUEoARIlhCABAQiUACESkQAISIlAghCSUIAU6pEITAchCEgFTxu7D6pEJMaECdu++SEIGMSlCECHN0PZ6hNQhAwQhCBAhCEABQhCAFdr3D5BNSoQDEQlQgBEiEJiBK5KhAxhSFCExCIQhAH/9k=" class="img-fluid rounded-start" alt="...">
+            </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">All That I Need</h5>
+                        <a href="https://open.spotify.com/track/1YEc4P48PIWSPNip6FaI3T?si=a39a70048b154bdd" target="_blank"><button class="btn btn-pill btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                            </svg> Play
+                            </button></a>
+                        <p class="card-text"><small class="text-body-secondary">Ebony Loren, Matthew Ifield, Sebastian Kamae</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 me-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273b8b7159faf69604ae4fff6b8" class="img-fluid rounded-start" alt="...">
+            </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Yes I'm A Mess</h5>
+                        <a href="https://open.spotify.com/track/4Yrt54xR4T8PPOZ7yf9kyT?si=36f8049fce5a4150" target="_blank"><button class="btn btn-pill btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                            </svg> Play
+                            </button></a>
+                        <p class="card-text"><small class="text-body-secondary">AJR</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 me-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2735f9608114e13bb4e5e6b0399" class="img-fluid rounded-start" alt="...">
+            </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Any song</h5>
+                        <p class="card-text">
+                            <a href="https://open.spotify.com/track/1iIhGHzzrzqQfuNkFI2qAn?si=9e7ff134a3a14f50" target="_blank"><button class="btn btn-pill btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                            </svg> Play
+                            </button></a>
+                        </p>
+                          
+                        <p class="card-text"><small class="text-body-secondary">ZICO</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 me-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://i.scdn.co/image/ab67616d00001e0262c2819048363104c5dfa6ba" class="img-fluid rounded-start" alt="...">
+            </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Used to Me</h5>
+                        <a href="https://open.spotify.com/track/5NF5TV9zGZ9QLKLf7Oq05T?si=c4e7e4d415e5491c" target="_blank"><button class="btn btn-pill btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                            </svg> Play
+                            </button></a>
+                        <p class="card-text"><small class="text-body-secondary">Luke Chiang</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 me-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273b93818853f70933b3791e368" class="img-fluid rounded-start" alt="...">
+            </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Steal The Show</h5>
+                        <a href="https://open.spotify.com/track/2xGRrcajSvRlBbAXds2l7u?si=8d8226c02c8f4dd9" target="_blank"><button class="btn btn-pill btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                            </svg> Play
+                            </button></a>
+                        <p class="card-text"><small class="text-body-secondary">SHAUN, Jeff Satur</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+</body>
+</html>
